@@ -27,7 +27,7 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   lang: "en-US",
   // base: '/base/',
-  base: "/",
+  base: "/blog/",
   rewrites: {
     "source/:page": "destination/:page",
   },
