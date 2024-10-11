@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "yyj's blog",
   titleTemplate: ":title - Demo",
-  description: "A VitePress Site",
+  description: "VitePress Demo",
   srcDir: "./src",
   vite: {},
   vue: {},
@@ -13,7 +13,7 @@ export default defineConfig({
       // tipLabel: "提示",
       // warningLabel: "警告",
       // dangerLabel: "危险",
-      // infoLabel: "信息",
+      infoLabel: "信息",
       // detailsLabel: "详细信息",
     },
     // lineNumbers: true,
@@ -26,7 +26,7 @@ export default defineConfig({
   },
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   lang: "en-US",
-  // base: '/base/',
+  // base: '/', // 默认
   base: "/blog/",
   rewrites: {
     "source/:page": "destination/:page",
@@ -46,11 +46,20 @@ export default defineConfig({
         text: "Examples",
         items: [
           { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Runtime API Examples", link: "/runtime-api" },
         ],
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/yangyangyyj/blog" }],
+
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+
+    outline: {
+      label: "页面导航",
+    },
   },
 });
