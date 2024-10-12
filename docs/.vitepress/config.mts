@@ -59,14 +59,14 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/yangyangyyj/blog" }],
 
     // 文档底部翻页按钮
-    docFooter: {
-      prev: "上一页",
-      next: "下一页",
-    },
+    // docFooter: {
+    //   prev: "上一页",
+    //   next: "下一页",
+    // },
 
     // 右侧导航标题
-    outline: {
-      label: "页面导航",
-    },
+    // outline: {
+    //   label: "页面导航",
+    // },
   },
 });
