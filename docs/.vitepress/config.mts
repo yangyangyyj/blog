@@ -28,7 +28,7 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   lang: "en-US",
   // base: '/', // 默认
-  base: "/blog/", // 部署到github pages的路径
+  base: "/blog/", // 部署到github pages的仓库路径
   rewrites: {
     "source/:page": "destination/:page",
   },
