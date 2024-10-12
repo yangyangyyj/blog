@@ -30,6 +30,6 @@ customText: Custom homepage Text
 
 <!-- 自定义首页markdown内容 -->
 
-# Welcome to my blog
+<!-- # Welcome to my blog
 
-This is the home page of my blog.
+This is the home page of my blog. -->
