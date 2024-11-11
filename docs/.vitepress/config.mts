@@ -2,20 +2,20 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "yyj's blog",
-  titleTemplate: ":title - Demo",
-  description: "VitePress Demo",
+  title: "YYY Space",
+  titleTemplate: ":title - YYY",
+  description: "YYY Space",
   srcDir: "./src",
   vite: {},
   vue: {},
   // markdown语法配置
   markdown: {
     container: {
-      // tipLabel: "提示",
-      // warningLabel: "警告",
-      // dangerLabel: "危险",
+      tipLabel: "提示",
+      warningLabel: "警告",
+      dangerLabel: "危险",
       infoLabel: "信息",
-      // detailsLabel: "详细信息",
+      detailsLabel: "详细信息",
     },
     // lineNumbers: true, // 默认显示行号
     math: true, // 默认开启数学公式支持
@@ -25,6 +25,7 @@ export default defineConfig({
     },
     toc: { level: [1, 2, 3] }, // 默认主题右侧导航栏
   },
+  lastUpdated: true, // 默认显示最近更新时间
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   lang: "en-US",
   // base: '/', // 默认
@@ -42,31 +43,46 @@ export default defineConfig({
     // 顶部导航栏
     nav: [
       { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "markdown", link: "/notes/vitepress/markdown-examples" },
     ],
 
     // 左侧导航栏
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/runtime-api" },
-        ],
-      },
-    ],
+    sidebar: {
+      "notes/vue3/": [
+        {
+          text: "Vue3",
+          collapsed: true,
+          items: [
+            { text: "第一篇", link: "/notes/vue3/notes-vue3-n1" },
+            { text: "第二篇", link: "/notes/vue3/notes-vue3-n2" },
+            { text: "第三篇", link: "/notes/vue3/notes-vue3-n3" },
+            { text: "第四篇", link: "/notes/vue3/notes-vue3-n4" },
+          ],
+        },
+      ],
+      "notes/vitepress/": [
+        {
+          text: "Vitepress",
+          collapsed: true,
+          items: [
+            { text: "markdown", link: "/notes/vitepress/markdown-examples" },
+            { text: "api", link: "/notes/vitepress/runtime-api" },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [{ icon: "github", link: "https://github.com/yangyangyyj/blog" }],
 
     // 文档底部翻页按钮
-    // docFooter: {
-    //   prev: "上一页",
-    //   next: "下一页",
-    // },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
 
     // 右侧导航标题
-    // outline: {
-    //   label: "页面导航",
-    // },
+    outline: {
+      label: "页面导航",
+    },
   },
 });

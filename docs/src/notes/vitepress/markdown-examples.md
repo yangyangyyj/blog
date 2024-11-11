@@ -408,11 +408,11 @@ export default config;
 
 <!-- 文件名默认用作标题 -->
 
-<<< @/snippets/snippet.js
+<<< @/notes/vitepress/snippets/snippet.js
 
 <!-- 也可以提供定制的代码组 -->
 
-<<< @/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
+<<< @/notes/vitepress/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
 
 :::
 ````
@@ -431,9 +431,9 @@ const config: UserConfig = {
 export default config;
 ```
 
-<<< @/snippets/snippet.js
+<<< @/notes/vitepress/snippets/snippet.js
 
-<<< @/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
+<<< @/notes/vitepress/snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [snippet with region]
 
 :::
 
@@ -452,8 +452,8 @@ export default config;
 ```md
 # Basics
 
-<!!--@include: @/snippets/basics.md-->
-<!!--@include: @/snippets/basics.md{2,3}-->
+<!!--@include: @/notes/vitepress/snippets/basics.md-->
+<!!--@include: @/notes/vitepress/snippets/basics.md{2,3}-->
 ```
 
 **输出**
@@ -461,8 +461,8 @@ export default config;
 ```md
 # Basics
 
-<!--@include: @/snippets/basics.md-->
-<!--@include: @/snippets/basics.md{2,3}-->
+<!--@include: @/notes/vitepress/snippets/basics.md-->
+<!--@include: @/notes/vitepress/snippets/basics.md{2,3}-->
 ```
 
 所选行范围的格式可以是： `{m,}`、 `{,n}`、`{m,n}`
