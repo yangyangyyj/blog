@@ -6,7 +6,7 @@ tags:
   - Vue3
   - Notes
 categories:
-  - Notes
+  - Vue3
 ---
 
 # Vue3 Notes - N1

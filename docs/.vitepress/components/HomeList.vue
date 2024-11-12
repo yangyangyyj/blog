@@ -2,15 +2,18 @@
 
 <script setup>
 import { useData, useRouter } from "vitepress";
+import { data as notes } from "../utils/notes.data.ts";
+
+console.log("notes");
+console.log(notes);
 
 const { theme } = useData();
 const router = useRouter();
-
 // 生成扁平列表
 const { sidebar } = theme.value;
 
 // console.log(sidebar);
-console.log(sidebar);
+// console.log(sidebar);
 
 const list = [];
 Object.keys(sidebar).forEach((dir) => {
@@ -41,6 +44,9 @@ const recList = list
       <span class="dir">{{ item.parentText }} / </span>
       <span class="tit">{{ item.text || "" }}</span>
       <span class="date">{{ item.updateTime }}</span>
+    </li>
+    <li v-for="(item, index) in notes" :key="index" @click="router.go(item.url)">
+      <span class="dir">{{ item.url }} / </span>
     </li>
   </ol>
 </template>

@@ -74,6 +74,14 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/yangyangyyj/blog" }],
 
+    lastUpdated: {
+      text: "更新于",
+      formatOptions: {
+        dateStyle: "medium",
+        timeStyle: "medium",
+      },
+    },
+
     // 文档底部翻页按钮
     docFooter: {
       prev: "上一页",

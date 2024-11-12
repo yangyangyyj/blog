@@ -9,7 +9,7 @@ import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
 // 引入自定义组件
-import HomeList from "./slots/HomeList.vue";
+import HomeList from "../components/HomeList.vue";
 
 export default {
   extends: DefaultTheme,
