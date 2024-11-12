@@ -4,8 +4,11 @@
 import { useData, useRouter } from "vitepress";
 import { data as notes } from "../utils/notes.data.ts";
 
-console.log("notes");
-console.log(notes);
+setTimeout(() => {
+  console.log("HomeList.vue mounted");
+  console.log("notes");
+  console.log(notes);
+}, 1000);
 
 const { theme } = useData();
 const router = useRouter();
