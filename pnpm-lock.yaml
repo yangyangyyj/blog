@@ -37,9 +37,6 @@ devDependencies:
   vue:
     specifier: ^3.4.27
     version: 3.4.27
-  vuepress-plugin-dynamic-title:
-    specifier: ^1.0.0
-    version: 1.0.0
 
 packages:
 
@@ -2291,6 +2288,7 @@ packages:
   /is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dev: true
 
   /is-glob@4.0.3:
@@ -2964,10 +2962,6 @@ packages:
       '@vue/runtime-dom': 3.4.27
       '@vue/server-renderer': 3.4.27(vue@3.4.27)
       '@vue/shared': 3.4.27
-
-  /vuepress-plugin-dynamic-title@1.0.0:
-    resolution: {integrity: sha512-CN1wtkPNG3shGzEFgqOa2dzojSle7SeAaf+Cw77Xmkv8jvB3wO5r2zXkIHTjiclQY1c5q5lE8h2A9vQaLdor2Q==}
-    dev: true
 
   /web-resource-inliner@6.0.1:
     resolution: {integrity: sha512-kfqDxt5dTB1JhqsCUQVFDj0rmY+4HLwGQIsLPbyrsN9y9WV/1oFDSx3BQ4GfCv9X+jVeQ7rouTqwK53rA/7t8A==}
