@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 import UnoCSS from "unocss/vite";
-import DynamicTitle from "vuepress-plugin-dynamic-title";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,13 +11,13 @@ export default defineConfig({
     publicDir: "../public", // 指定 public 目录路径
     plugins: [
       UnoCSS(),
-      DynamicTitle({
-        showIcon: "/favicon.ico",
-        showText: "(/≧▽≦/)咦！又好了！",
-        hideIcon: "/failure.ico",
-        hideText: "(●—●)喔哟，崩溃啦！",
-        recoverTime: 2000,
-      }),
+      // DynamicTitle({
+      //   showIcon: "/favicon.ico",
+      //   showText: "(/≧▽≦/)咦！又好了！",
+      //   hideIcon: "/failure.ico",
+      //   hideText: "(●—●)喔哟，崩溃啦！",
+      //   recoverTime: 2000,
+      // }),
     ],
   },
   vue: {},
