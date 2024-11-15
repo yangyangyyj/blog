@@ -1,0 +1,9 @@
+@font-face {
+  font-style: normal;
+  font-family: "Harmony_Regular";
+  src: url("../../public/fonts/HarmonyOS_Sans_SC_Regular.woff") format("woff");
+}
+
+:root {
+  --vp-font-family-base: "Harmony_Regular";
+}

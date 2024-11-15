@@ -1,12 +1,26 @@
 import { defineConfig } from "vitepress";
+import UnoCSS from "unocss/vite";
+import DynamicTitle from "vuepress-plugin-dynamic-title";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "YYY Space",
-  titleTemplate: ":title - YYY",
-  description: "YYY Space",
+  title: "沐雨橙风",
+  titleTemplate: ":title - 沐雨橙风",
+  description: "你指尖跃动的电光，是我此生不变的信仰",
   srcDir: "./src",
-  vite: {},
+  vite: {
+    publicDir: "../public", // 指定 public 目录路径
+    plugins: [
+      UnoCSS(),
+      DynamicTitle({
+        showIcon: "/favicon.ico",
+        showText: "(/≧▽≦/)咦！又好了！",
+        hideIcon: "/failure.ico",
+        hideText: "(●—●)喔哟，崩溃啦！",
+        recoverTime: 2000,
+      }),
+    ],
+  },
   vue: {},
   // markdown语法配置
   markdown: {
@@ -26,7 +40,7 @@ export default defineConfig({
     toc: { level: [1, 2, 3] }, // 默认主题右侧导航栏
   },
   lastUpdated: true, // 默认显示最近更新时间
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "../public/favicon.ico" }]],
   lang: "en-US",
   // base: '/', // 默认
   base: "/blog/", // 部署到github pages的仓库路径
