@@ -9,7 +9,7 @@ function getNotePage(url) {
 }
 </script>
 <template>
-  <div px-4 max-w-1200px mx-auto>
+  <div px-4 max-w-1200px mx-auto bg-transparent>
     <el-timeline>
       <el-timeline-item
         v-for="(item, index) in notes.concat(notes)"

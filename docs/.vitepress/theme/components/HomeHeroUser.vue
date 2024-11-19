@@ -2,6 +2,7 @@
 import { ref, unref } from "vue";
 import { useData } from "vitepress";
 import HomeHeroUserAvatar from "./HomeHeroUserAvatar.vue";
+import AnimationWave from "./AnimationWave.vue";
 
 const { site } = useData();
 const { title, description } = site.value;
@@ -24,7 +25,7 @@ function handleMouseLeave() {
 </script>
 
 <template>
-  <div class="home-hero-user" h-120 pt-16 flex="~ col justify-center items-center">
+  <div class="home-hero-user">
     <div ref="userRef" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" preserve-3d perspective-1000>
       <div ref="userContentRef" class="home-hero-user-content">
         <HomeHeroUserAvatar />
@@ -35,13 +36,17 @@ function handleMouseLeave() {
         </div>
       </div>
     </div>
+    <AnimationWave />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .home-hero-user {
+  @apply h-120 pt-16;
+  @apply relative flex flex-col justify-center items-center;
   background: url("../assets/images/bg-space.jpg");
   @apply bg-no-repeat bg-cover;
+  mask: linear-gradient(to top, transparent, #eaeff5 6%);
 
   .home-hero-user-content {
     @apply w-150 h-60 p-4;

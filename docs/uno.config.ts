@@ -80,9 +80,10 @@ export default defineConfig({
     }),
     presetTypography(),
     presetScrollbar({
-      scrollbarTrackColor: "transparent",
-      scrollbarThumbColor: "#D1E7FF",
-      scrollbarWidth: "4px",
+      scrollbarTrackColor: "#999",
+      scrollbarThumbColor: "#333",
+      scrollbarWidth: "16px",
+      scrollbarThumbRadius: "8px",
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],

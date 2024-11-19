@@ -15,7 +15,7 @@ import avatar from "../assets/images/avatar.png";
 
 .home-avatar {
   @apply w-30 h-30;
-  @apply transition duration-500 ease;
+  @apply transition duration-800 ease-out;
   @apply rounded-15 border-2 border-solid border-gray-300;
   @apply bg-blue-2 cursor-pointer;
 }

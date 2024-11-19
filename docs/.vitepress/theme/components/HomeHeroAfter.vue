@@ -6,5 +6,5 @@ import HomeHeroList from "./HomeHeroList.vue";
 </script>
 <template>
   <HomeHeroUser />
-  <HomeHeroList />
+  <!-- <HomeHeroList /> -->
 </template>
